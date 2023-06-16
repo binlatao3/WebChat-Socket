@@ -1,0 +1,31 @@
+<div class="login">
+    <form action="/signup" method="post">
+        <div class="content-login">
+            <a href="./login"><i class="fi fi-rr-arrow-left arrow-signup"></i></a>
+            <h3>Sign up</h3>
+            <div class="form-group">
+                <label for="" class="form-label">Full name</label>
+                <input type="text" class="form-input" id="fullname" value="{{fullname}}" name="fullname" placeholder="Enter fullname">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">Username</label>
+                <input type="text" class="form-input" id="username" value="{{username}}" name="username" placeholder="Enter username">
+            </div>
+            <div class="form-group">
+                <label for="" class="form-label">Password</label>
+                <div class="input-pass">
+                    <input type="password" class="form-input" id="password" value="{{password}}" name="password" placeholder="Enter password">
+                    <i class="fi fi-rr-eye  show-pass"></i>
+                    <i class="fi fi-rr-eye-crossed  hide-pass"></i>
+                </div>
+            </div>
+            {{#if error}}
+                <div class="error-message">{{error}}</div>  
+            {{/if}}
+            <div class="btn-login">
+                <button type="submit" id="submit-signup">Sign up</button>
+                <i class="fi fi-rr-arrow-right"></i>
+            </div>
+        </div>
+    </form>
+</div>

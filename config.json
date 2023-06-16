@@ -1,0 +1,13 @@
+{
+    "mongodb":
+    {
+        "development":
+        {
+            "connectString": "mongodb://127.0.0.1:27017/GIUAKY?readPreference=primary&directConnection=true&ssl=false"
+        },
+        "production":
+        {
+            "connectString": "mongodb+srv://admin:ngumaxao123@cluster0.4qxuc.mongodb.net/GIUAKY?retryWrites=true&w=majority"
+        }
+    }
+}
