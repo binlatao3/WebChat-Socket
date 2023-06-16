@@ -146,17 +146,6 @@ function hideModalGroup(){
     modalGroup.classList.remove('active')
 }
 
-// document.addEventListener('DOMContentLoaded', (event) => {
-//     console.log(contentMessage.textContent)
-
-//     for(i = 0 ;i <= contentMessage.length; i++){
-//         if(contentMessage[i].textContent.length > 38){
-//             const s = contentMessage[i].textContent.substring(0,38) + '...';
-//             contentMessage[i].textContent = s;
-//         }
-//     }
-// });
-
 
 $(document).ready(function(){
     $("form#submitform").submit(function(event) {
